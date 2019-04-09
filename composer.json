@@ -1,0 +1,14 @@
+{
+    "require": {
+        "smarty/smarty": "dev-trunk",
+        "mustangostang/spyc": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "action\\" : "src/action/",
+            "controller\\"      : "src/controller/",
+            "core\\" : "src/core/",
+            "util\\" : "src/util/"
+        }
+    }
+}

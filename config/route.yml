@@ -1,0 +1,9 @@
+_default: controller\IndexController:index
+
+tools:
+  _default: controller\ToolsController:index
+  
+  csv:
+    _default: controller\CsvController:index
+    parse: controller\CsvController:parseString
+    parseFile: controller\CsvController:parseFile

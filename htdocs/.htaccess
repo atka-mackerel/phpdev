@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /htdocs/
+
+RewriteCond %{REQUEST_URI} !^/htdocs/index\.php.*$
+RewriteCond %{REQUEST_URI} !^/.*\.js$
+RewriteCond %{REQUEST_URI} !^/.*\.css$
+RewriteRule ^(.*)$ index.php?action=$1 [L]

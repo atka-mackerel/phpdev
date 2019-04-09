@@ -1,0 +1,6 @@
+/.settings/
+/templates_c/
+/vendor/
+/.buildpath
+/.project
+/composer.lock
