@@ -10,8 +10,8 @@
 ======================================*/
 
 /* global variables */
-html { -
-	-navHeight: 50px;
+html {
+	--navHeight: 50px;
 }
 
 body {
@@ -1944,11 +1944,11 @@ footer .credits {
 }
 
 nav.navbar {
-	height: var(- -navHeight);
+	height: var(--navHeight);
 }
 
 .main-conteiner {
-	margin-top: calc(var(- -navHeight)+ 20px) !important;
+	margin-top: calc(var(--navHeight) + 25px) !important;
 	min-height: calc(100vh - 510px);
 }
 
