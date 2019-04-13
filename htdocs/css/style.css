@@ -1949,7 +1949,7 @@ nav.navbar {
 
 .main-conteiner {
 	margin-top: calc(var(--navHeight) + 25px) !important;
-	min-height: calc(100vh - 510px);
+	min-height: calc(100vh - 227px);
 }
 
 textarea.previewText {

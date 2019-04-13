@@ -9,14 +9,14 @@
 		<form>
 			<div class="row">
 				<!-- 入力設定 -->
-				<div class="col">
+				<div class="col-sm-12 col-md-6">
 					<h5>入力設定</h5>
 					<!-- 区切り文字 -->
 					<fieldset class="form-group">
 						<div class="row">
 							<legend class="col-form-label col-sm-2 pt-0">
 								区切り文字<i class="fas fa-question-circle" tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
-									data-placement="right" data-html="true" data-content="ここで指定した文字で<br/>文字列が区切られます。" title="区切り文字の指定"></i>
+									data-placement="right" data-html="true" data-content="ここで指定した文字を<br/>区切り文字として使用します。" title="区切り文字の指定"></i>
 							</legend>
 							<div class="col-sm-4">
 								<div class="form-check">
@@ -86,7 +86,7 @@
 					</fieldset>
 				</div>
 				<!-- 出力設定 -->
-				<div class="col">
+				<div class="col-sm-12 col-md-6">
 					<h5>出力設定</h5>
 					<!-- 区切り文字 -->
 					<fieldset class="form-group">
@@ -150,7 +150,7 @@
 							<legend class="col-form-label col-sm-2 pt-0">
 								出力方法<i class="fas fa-question-circle" tabindex="0" role="button" data-toggle="popover" data-trigger="focus"
 									data-placement="right" data-html="true"
-									data-content="出力方法を指定します。<br/>プレビュー表示を選択した場合は、出力結果がブラウザ上のモーダルに表示されます。<br/>ファイルを選択した場合は、出力結果をCSVファイルとしてダウンロード可能です。"
+									data-content="出力方法を指定します。<br/>プレビュー表示を選択した場合は、出力結果がブラウザ上のモーダルに表示されます。(100行まで)<br/>ファイルを選択した場合は、出力結果をCSVファイルとしてダウンロード可能です。"
 									title="出力方法の指定"></i>
 							</legend>
 							<div class="col-sm-4">
@@ -232,9 +232,8 @@
 				</div>
 			</div>
 		</form>
-
-		{include file='./footer.html'}
 	</div>
+	{include file='./footer.html'}
 
 	{include file='./script.html'}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.13/ng-file-upload.min.js"></script>
