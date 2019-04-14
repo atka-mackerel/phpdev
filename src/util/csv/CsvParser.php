@@ -3,7 +3,7 @@ namespace util\csv;
 
 use util\common\CommonUtil;
 use core\ApplicationException;
-use src\util\common\Message;
+use util\common\Message;
 
 class CsvParser
 {

@@ -1,7 +1,7 @@
 <?php
 namespace controller;
 
-use src\util\common\Message;
+use util\common\Message;
 
 class RouteController
 {

@@ -1,5 +1,5 @@
 <?php
-namespace src\util\common;
+namespace util\common;
 
 class Message
 {
