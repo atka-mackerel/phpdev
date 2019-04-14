@@ -5,7 +5,6 @@ use action\Action;
 use core\ApplicationException;
 use action\api\ErrorApiAction;
 use action\page\ErrorPageAction;
-use util\common\CommonUtil;
 
 class ControllerBase
 {
