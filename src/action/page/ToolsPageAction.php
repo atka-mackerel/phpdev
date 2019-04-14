@@ -6,7 +6,7 @@ class ToolsPageAction extends AbstractPageAction
 
     public function init()
     {
-        $this->assign('title', 'トップページ');
+        $this->assign('title', 'ツール');
         $this->assign('activePage', 1);
         $this->assign('breadcrumb', [
             ['title' => 'ツール', 'href' => '/tools']

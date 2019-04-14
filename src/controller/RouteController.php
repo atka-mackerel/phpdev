@@ -1,6 +1,8 @@
 <?php
 namespace controller;
 
+use src\util\common\Message;
+
 class RouteController
 {
 
@@ -60,7 +62,7 @@ class RouteController
             $actionMapping['controller'] = 'controller\ErrorController';
             $actionMapping['action'] = 'controll';
             $actionMapping['args'] = [
-                'E0002'
+                Message::INVALID_URL
             ];
         }
 
@@ -75,7 +77,7 @@ class RouteController
         }
         else {
             $refrect = new \ReflectionClass('controller\ErrorController');
-            return $refrect->newInstanceArgs(['E0001']);
+            return $refrect->newInstanceArgs([Message::INTERNAL_ERROR]);
         }
     }
 

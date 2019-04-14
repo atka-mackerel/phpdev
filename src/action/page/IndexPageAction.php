@@ -6,7 +6,7 @@ class IndexPageAction extends AbstractPageAction
 
     public function init()
     {
-        $this->assign('title', 'トップページ');
+        $this->assign('title', 'ツール置き場');
         $this->assign('activePage', 0);
     }
 

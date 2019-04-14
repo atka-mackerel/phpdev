@@ -3,6 +3,7 @@ namespace util\csv;
 
 use util\common\CommonUtil;
 use core\ApplicationException;
+use src\util\common\Message;
 
 class CsvParser
 {
@@ -16,6 +17,8 @@ class CsvParser
     public const LF = "\n";
 
     public const CRLF = "\r\n";
+
+    public const DETECT_CHARSET = 'ASCII,JIS,UTF-8,CP51932,SJIS-win';
 
     private $delimiter;
 
@@ -54,7 +57,7 @@ class CsvParser
     {
         $handle = fopen($filename, 'r');
         $line = fgets($handle);
-        $encoding = mb_detect_encoding($line, 'ASCII,JIS,UTF-8,CP51932,SJIS-win') ?: mb_internal_encoding();
+        $encoding = mb_detect_encoding($line, self::DETECT_CHARSET) ?: mb_internal_encoding();
 
         $line_delimiter = self::CRLF;
         if (mb_strpos($line, self::CRLF) === false) {
@@ -171,7 +174,7 @@ class CsvParser
         }
 
         if ($lineWk !== '') {
-            throw new ApplicationException('E0003');
+            throw new ApplicationException(Message::INVALID_CSV);
         }
     }
 }

@@ -1962,4 +1962,5 @@ textarea.previewText {
 
 .navbar-collapse ul.navbar-nav {
 	background-color: #FFFFFF;
+	opacity: 0.8;
 }

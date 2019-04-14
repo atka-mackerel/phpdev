@@ -33,8 +33,7 @@ class CommonUtil
                 $token = mb_substr($str, 0, $pos);
                 $str = mb_substr($str, $pos + strlen($delimiter));
                 yield $token;
-            }
-            else {
+            } else {
                 yield $str;
             }
         } while ($pos !== false);
@@ -48,5 +47,9 @@ class CommonUtil
         return $str;
     }
 
+    public static function getMessage(string $messageId): string
+    {
+        return $_SESSION['MESSAGE'][$messageId] ?? null;
+    }
 }
 
